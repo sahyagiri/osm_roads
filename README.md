@@ -17,3 +17,5 @@ way_finder.export_trie('bangalore_updated.trie')
 
 ## Loading the trie from file 
 way_finder.load_trie('bangalore_updated.trie')
+
+![Output](sample_output.png)
