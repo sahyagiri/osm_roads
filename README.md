@@ -19,3 +19,12 @@ way_finder.export_trie('bangalore_updated.trie')
 way_finder.load_trie('bangalore_updated.trie')
 
 ![Output](sample_output.png)
+
+### How to get PBF files and slice them 
+1. Visit the [OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Planet.osm). For example, the file used in the example is downloaded from [GeoFabrik](https://download.geofabrik.de/asia/india.html), one of the mirrors of OSM
+
+2. Install the Osmium Tool (works well in linux). sudo apt-get install -y osmium-tool
+3. Run "osmium extract -b 77.343833,13.159493,77.905509,12.830316 southern-zone-latest.osm.pbf -o bengaluru.pbf" (replace the bounding box lat,lons as per your need)
+
+
+
