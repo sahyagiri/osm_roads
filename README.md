@@ -11,6 +11,7 @@ way_finder.load_osm_pbf("bengaluru.pbf")
 ## Search for map matching with latitude and longitude 
 
 way_finder.get_road_type(12.934005898750094, 77.61075025215672)
+
 ![Output](sample_output.png)
 
 ## Saving the current PBF to a trie 
