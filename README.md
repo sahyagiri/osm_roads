@@ -11,6 +11,7 @@ way_finder.load_osm_pbf("bengaluru.pbf")
 ## Search for map matching with latitude and longitude 
 
 way_finder.get_road_type(12.934005898750094, 77.61075025215672)
+![Output](sample_output.png)
 
 ## Saving the current PBF to a trie 
 way_finder.export_trie('bangalore_updated.trie')
@@ -18,7 +19,7 @@ way_finder.export_trie('bangalore_updated.trie')
 ## Loading the trie from file 
 way_finder.load_trie('bangalore_updated.trie')
 
-![Output](sample_output.png)
+
 
 ### How to get PBF files and slice them 
 1. Visit the [OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Planet.osm). The file used in the example is downloaded from [GeoFabrik](https://download.geofabrik.de/asia/india.html), one of the mirrors of OSM and sliced using Osmium Tool
