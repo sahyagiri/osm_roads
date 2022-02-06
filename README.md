@@ -7,16 +7,18 @@ pip install osm-roads
 ## Importing and loading the pbf file
 from osm_roads.osm_roads import OsmRoads
 
-way_finder = OsmRoads()
-way_finder.load_osm_pbf("bengaluru.pbf")
+osm_roads=OsmRoads(hdf5_file_name="bengaluru.hdf5",openstreetmap_pbf_file_name="bengaluru.pbf")
+
+## Closing the file handler 
+
+## Opening the HDF5 osm file 
+osm_roads=OsmRoads(hdf5_file_name="bengaluru.hdf5")
 
 ## Search for map matching with latitude and longitude 
 
-way_finder.get_road_type(12.934005898750094, 77.61075025215672)
+osm_roads.get_closest_road(12.934005898750094, 77.61075025215672)
 
 ![Output](sample_output.png)
-
-
 
 
 ### How to get PBF files and slice them 
