@@ -1,5 +1,5 @@
 # OpenStreetMap Roads
-The package takes an openstreetmap pbf file and converts it to a Trie with all the road network information
+The package takes an openstreetmap pbf file and converts it to a geohash prefix based hdf5 file. 
 It provides an api to then do a fast map matching for any latitude, longitude that comes under the bounding box of the pbf file. 
 ### Installation
 pip install osm-roads
