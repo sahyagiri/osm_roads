@@ -8,15 +8,29 @@ bounding box of the pbf file. ### Installation pip install osm-roads
 
 Importing and loading the pbf file
 ----------------------------------
-
 from osm_roads.osm_roads import OsmRoads
 
-osm_roads=OsmRoads(hdf5_file_name="bengaloru.hdf5",openstreetmap_pbf_file_name="bengaloru.pbf")
+
+Load and convert to hdf5 file for the first time
+----------------------------------
+
+osm_roads=OsmRoads(hdf5_file_name="bengaluru.hdf5",openstreetmap_pbf_file_name="bengaluru.pbf")
+
+Close the database 
+----------------------------------
+
+osm.close_database()
+
+Load the hdf5 file
+----------------------------------
+
+
+osm_roads=OsmRoads(hdf5_file_name="bengaluru.hdf5")
 
 Search for map matching with latitude and longitude
 ---------------------------------------------------
 
-way_finder.get_closest_road(12.934005898750094, 77.61075025215672)
+osm_roads.get_closest_road(12.934005898750094, 77.61075025215672)
 
 
 How to get PBF files and slice them

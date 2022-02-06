@@ -16,11 +16,6 @@ way_finder.get_road_type(12.934005898750094, 77.61075025215672)
 
 ![Output](sample_output.png)
 
-## Saving the current PBF to a trie 
-way_finder.export_trie('bangalore_updated.trie')
-
-## Loading the trie from file 
-way_finder.load_trie('bangalore_updated.trie')
 
 
 
